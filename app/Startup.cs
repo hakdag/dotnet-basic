@@ -27,7 +27,7 @@ namespace web1
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World! This response just added.");
+                await context.Response.WriteAsync("Hello World! Another new response.");
             });
         }
     }
