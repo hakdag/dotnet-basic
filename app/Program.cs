@@ -16,7 +16,7 @@ namespace web1
         {
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("hosting.json", optional: true)
+                .AddCommandLine(args)
                 .Build();
         
             var host = new WebHostBuilder()
@@ -28,15 +28,5 @@ namespace web1
         
             host.Run();
         }
-        /*
-        public static void Main(string[] args)
-        {
-            CreateWebHostBuilder(args).Build().Run();
-        }
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
-        */
     }
 }
