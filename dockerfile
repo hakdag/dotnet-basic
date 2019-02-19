@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY ./publish .
 
-ENTRYPOINT ["dotnet", "web1.dll", "--server.urls=http://*:8080"]
+ENTRYPOINT ["dotnet", "web1.dll", "--server.urls=http://*:8081"]
